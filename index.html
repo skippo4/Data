@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XYLEMTECH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="mylogo.jpg" alt="XYLEM Logo" class="mylogo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Welcome to XYLEMTECH</h1>
+    <p>Empowering your future with Data Skills</p>
+    <a href="#apply" class="btn">Apply Now</a>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="excel.jpg" alt="Excel" class="course-icon" />
+        <h3>Microsoft Excel</h3>
+        <p>Master Excel for data management and analysis.</p>
+        <a href="#apply" class="course-btn">Enroll</a>
+      </div>
+      <div class="course-card">
+        <img src="powerbi.jpg" alt="Power BI" class="course-icon" />
+        <h3>Power BI</h3>
+        <p>Create stunning dashboards and business intelligence reports.</p>
+        <a href="#apply" class="course-btn">Enroll</a>
+      </div>
+      <div class="course-card">
+        <img src="python.jpg" alt="Python" class="course-icon" />
+        <h3>Python for Data Analysis</h3>
+        <p>Analyze and visualize data using Python.</p>
+        <a href="#apply" class="course-btn">Enroll</a>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <img src="student1.jpg" alt="Student 1" class="testimonial-img" />
+        <p>XYLEM transformed my career with hands-on training in Power BI!</p>
+        <h4>- Chidi O.</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="student2.jpg" alt="Student 2" class="testimonial-img" />
+        <p>Excellent Excel course! Now I analyze data confidently.</p>
+        <h4>- Ngozi A.</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="student3.jpg" alt="Student 1" class="testimonial-img" />
+        <p>XYLEM transformed my career with hands-on training in Power BI!</p>
+        <h4>- Chidi O.</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="student2.jpg" alt="Student 2" class="testimonial-img" />
+        <p>Excellent Excel course! Now I analyze data confidently.</p>
+        <h4>- Ngozi A.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Section -->
+  <section class="apply" id="apply">
+    <h2>Apply for a Course</h2>
+    <form id="applyForm">
+      <input type="text" id="fullname" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="excel">Data Analysis</option>
+
+      </select>
+      <select id="level" required>
+        <option value="">Select Level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+      <button type="submit">
+        <span class="btn-text">Pay with Paystack</span>
+        <span class="spinner" style="display: none;">⏳</span>
+      </button>
+    </form>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 XYLEM Data School. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
